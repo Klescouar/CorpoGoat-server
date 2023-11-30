@@ -10,6 +10,7 @@ datasource db {
 model Organization {
   id        Int      @id @default(autoincrement())
   name      String
+  imageUrl  String
   createdAt DateTime @default(now())
   Rating    Rating[]
 }

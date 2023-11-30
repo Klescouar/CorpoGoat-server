@@ -6,4 +6,7 @@ export class CreateOrganizationDto {
 
   @IsString()
   name: string;
+
+  @IsString()
+  imageUrl: string;
 }
