@@ -16,20 +16,20 @@ export class OrganizationService {
     return prisma.organization.findMany();
   }
 
-  findOne(id: number) {
+  findOne(id: string) {
     return prisma.organization.findUnique({
       where: { id },
     });
   }
 
-  update(id: number, partialOrganization: UpdateOrganizationDto) {
+  update(id: string, partialOrganization: UpdateOrganizationDto) {
     return prisma.organization.update({
       where: { id },
       data: partialOrganization,
     });
   }
 
-  remove(id: number) {
+  remove(id: string) {
     return prisma.organization.delete({
       where: { id },
     });

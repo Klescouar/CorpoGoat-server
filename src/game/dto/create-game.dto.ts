@@ -5,7 +5,7 @@ export class CreateGameDto {
   id: number;
 
   @IsString()
-  title: string;
+  name: string;
 
   @IsString()
   createdAt: string;
